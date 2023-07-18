@@ -1,0 +1,10 @@
+text = input("Enter a string: ")
+
+def find_longest_sentence(text):
+    sentences = text.split(". ")
+    longest_sentence = max(sentences, key=len)
+    return longest_sentence
+
+longest_sentence = find_longest_sentence(text)
+print("Longest sentence:")
+print(longest_sentence)
